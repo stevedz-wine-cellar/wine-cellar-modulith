@@ -1,0 +1,14 @@
+server:
+  port: ${PORT:8080}
+
+spring:
+  cloud:
+    gcp:
+      datastore:
+        enabled: true
+
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: https://accounts.google.com
